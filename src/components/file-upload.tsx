@@ -47,7 +47,8 @@ export default function FileUpload() {
         }
         mutate(data, {
           onSuccess(data) {
-            toast.success(data.message);
+            console.log(data);
+            // toast.success(data.message);
           },
           onError(error) {
             toast.error("Error creating chat");
